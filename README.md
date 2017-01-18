@@ -43,7 +43,7 @@ This project documents how to setup your Phaser game with Airship.
 
 - In your terminal, run `airship land`.
 
-<img src="./compartments/assets/media/airship_land.png?raw=true" width="250" height="auto">
+<img src="./compartments/assets/media/airship_land.png?raw=true" width="200" height="auto">
 
 - This will pull down all necessary Airship config files and initial project structure. You will be asked if you want to download compartments to your project.
 
@@ -55,14 +55,13 @@ This project documents how to setup your Phaser game with Airship.
 
 - In your terminal, run `airship serve`.
 
-<img src="./compartments/assets/media/airship_serve.png?raw=true" width="250" height="auto">
+<img src="./compartments/assets/media/airship_serve.png?raw=true" width="200" height="auto">
 
 - This starts the server that will render all of your project files locally. 
 
 - Open your browser and navigate to `http://localhost:9001`. The page should look like the image below.
 
 ![](./compartments/assets/media/airship_serve2.png?raw=true)
-[@TE--REPLACE WITH localhost9001.png --coming soon!!]
 
 - The content you see on this page is rendered by the template `/compartments/templates/root.html`, which is then injected into the layout `/compartments/layouts/application.html`.
 
@@ -72,7 +71,7 @@ This project documents how to setup your Phaser game with Airship.
 
 - In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
 
-- In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`. There will be a lot of markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
+- In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`. There will be some markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
 
 <img src="./compartments/assets/media/root.html-hello.png?raw=true" width="auto" height="auto">
 
@@ -89,7 +88,7 @@ This project documents how to setup your Phaser game with Airship.
 ### Project Directory Structure
 This is your project directory structure.
 
-<img src="./compartments/assets/media/structure.png?raw=true" width="150" height="auto">
+<img src="./compartments/assets/media/structure.png?raw=true" width="275" height="auto">
 
 For your Phaser project, you will be using the `assets`, `layouts`, and `template` directories.
 
@@ -140,7 +139,7 @@ In this project, the layout used is `application.html` and the template used is 
 
   - Add your game images, music, sfx, etc.
 
-  <img src="./compartments/assets/media/media.png?raw=true" width="200" height="auto">
+  <img src="./compartments/assets/media/media.png?raw=true" width="300" height="auto">
 
 ### 3. /styles
   - In your project, navigate to `/compartments/assets/styles/`.
@@ -157,7 +156,7 @@ In this project, the layout used is `application.html` and the template used is 
 
   - If you aren't already running the `airship serve` command, then in your terminal, run `airship serve`.
 
-  <img src="./compartments/assets/media/airship_serve.png?raw=true" width="250" height="auto">
+  <img src="./compartments/assets/media/airship_serve.png?raw=true" width="200" height="auto">
 
   This starts the server that will render all of your project files locally.
 
@@ -187,6 +186,7 @@ In this project, the layout used is `application.html` and the template used is 
 * If you encounter an error like this while attempting to launch, you may have added a file type to the wrong directory or the file type you have added is unsupported. Please refer to the [Project Directory Structure](#project-directory-structure) section. ![](./compartments/assets/media/upload_failed.png?raw=true)
 
 * If you encounter an error like this, or another error about your `manifest` needing to be updated, while attempting to launch, your `manifest` may be out of sync with your local files. The `manifest` simply tracks differences between files in your local development workspace and the server. The `manifest` may sometimes be out of sync when there are `launch` or `land` errors, or if you have multiple people working on a project. Simply run `airship manifest` if prompted, and say `y` to generate the manifest file. This is not desctructive. No files or assets will be overwritten with this action.
+
 <img src="./compartments/assets/media/nothing-left-to-do.png?raw=true" width="500" height="auto">
 
 ---
