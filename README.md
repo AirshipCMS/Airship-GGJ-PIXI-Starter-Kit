@@ -181,13 +181,14 @@ In this project, the layout used is `application.html` and the template used is 
 
 - Open your browser and navigate to `projectname.airshipcms.io`.
 
-* If you encounter this error while attempting to launch, [log in](#airship-login) to your Airship project then try again. ![](./compartments/assets/media/unauthorized.png?raw=true)
+- If you encounter this error while attempting to launch, [log in](#airship-login) to your Airship project then try again. 
+  ![](./compartments/assets/media/unauthorized.png?raw=true)
 
-* If you encounter an error like this while attempting to launch, you may have added a file type to the wrong directory or the file type you have added is unsupported. Please refer to the [Project Directory Structure](#project-directory-structure) section. ![](./compartments/assets/media/upload_failed.png?raw=true)
+- If you encounter an error like this while attempting to launch, you may have added a file type to the wrong directory or the file type you have added is unsupported. Please refer to the [Project Directory Structure](#project-directory-structure) section. 
+  ![](./compartments/assets/media/upload_failed.png?raw=true)
 
-* If you encounter an error like this, or another error about your `manifest` needing to be updated, while attempting to launch, your `manifest` may be out of sync with your local files. The `manifest` simply tracks differences between files in your local development workspace and the server. The `manifest` may sometimes be out of sync when there are `launch` or `land` errors, or if you have multiple people working on a project. Simply run `airship manifest` if prompted, and say `y` to generate the manifest file. This is not desctructive. No files or assets will be overwritten with this action.
-
-<img src="./compartments/assets/media/nothing-left-to-do.png?raw=true" width="500" height="auto">
+- If you encounter an error like this, or another error about your `manifest` needing to be updated, while attempting to launch, your `manifest` may be out of sync with your local files. The `manifest` simply tracks differences between files in your local development workspace and the server. The `manifest` may sometimes be out of sync when there are `launch` or `land` errors, or if you have multiple people working on a project. Simply run `airship manifest` if prompted, and say `y` to generate the manifest file. This is not desctructive. No files or assets will be overwritten with this action. 
+  <img src="./compartments/assets/media/nothing-left-to-do.png?raw=true" width="700" height="auto">
 
 ---
 
