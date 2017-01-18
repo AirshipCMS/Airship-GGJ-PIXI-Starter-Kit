@@ -29,6 +29,8 @@ This project documents how to setup your Phaser game with Airship.
 
 ![](./compartments/assets/media/airship_login.png?raw=true)
 
+<img src="./compartments/assets/media/airship_login.png?raw=true" width="200" height="auto">
+
 - After running `airship login projectname`, you will be informed that you aren't in an Airship CMS project. You will be asked if you would you like to set the current directory as the Airship CMS project root for your site.
 
 - Enter `yes`or `y`.
