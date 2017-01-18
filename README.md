@@ -99,7 +99,7 @@ This is your project directory structure.
 For your Phaser project, you will be using the `assets`, `layouts`, and `template` directories.
 
 
-##### /assets
+### /assets
 The assets directory contains 3 subdirectories: `scripts`, `styles` and `media`.
 
 - `/scripts:` This directory may only contain scripts and text-based files (examples: .js, .xml, .json, .html). Do not put any binary files here. They will be rejected when you launch your project. Maximum file size is 5M. For this project, this will contain Phaser and game scripts. 
@@ -110,15 +110,14 @@ The assets directory contains 3 subdirectories: `scripts`, `styles` and `media`.
 
 Do not add any other directories or files immediately inside of `/assets`. The `/scripts`, `/styles` and `/media` directories may have any number of subdirectories.
 
-*File Paths*: When linking to files in assets, paths should look like: `/assets/scripts/filename.js` or `/assets/media/filename.png`.
+**File Paths**: When linking to files in assets, paths should look like: `/assets/scripts/filename.js` or `/assets/media/filename.png`.
 
-
-##### /layouts
+### /layouts
 The layouts directory mirrors the layout that is set for the page in the Airship CMS Portal.
 
 - `application.html`: This is the default layout. The layout typically includes global links to your media, scripts and styles, and any markup that should appear on all pages of your project.
 
-##### /templates
+### /templates
 The templates directory mirrors the template that is set for the page in the Airship CMS Portal.
 
 - `root.html`: This is the default layout. The template includes markup specific to a single page of your project.
@@ -129,9 +128,9 @@ For this project, you will use `application.html` or `root.html` to link to your
 
 ---
 
-### Adding Game Assets
+## Adding Game Assets
 
-1. ##### Scripts
+### 1. /scripts
 
   - In your project, navigate to `/compartments/assets/scripts/`.
 
@@ -144,14 +143,14 @@ For this project, you will use `application.html` or `root.html` to link to your
   ![](./compartments/assets/media/html_scripts.png?raw=true)
   [@TE replace with added-scripts.png]
 
-2. ##### Media
+### 2. /media
   - In your project, navigate to `/compartments/assets/media/`.
 
   - Add your game images, music, sfx, etc.
 
    ![](./compartments/assets/media/media.png?raw=true)
 
-3. ##### Styles
+### 3. /styles
   - In your project, navigate to `/compartments/assets/styles/`.
 
   - Add your css files.
@@ -162,9 +161,9 @@ For this project, you will use `application.html` or `root.html` to link to your
 
 ---
 
-### Serving Your Game Locally
+## Serving Your Game Locally
 
-1. ##### [Airship Serve](#airship-serve)
+### [Airship Serve](#airship-serve)
 
   - If you aren't already running the `airship serve` command, then in your terminal, run `airship serve`.
 
@@ -180,7 +179,7 @@ For this project, you will use `application.html` or `root.html` to link to your
 
 ### Launching Your Game
 
-##### 1. [Airship Launch](#airship-launch)
+### [Airship Launch](#airship-launch)
 
 - In your terminal, run `airship launch`.
 
