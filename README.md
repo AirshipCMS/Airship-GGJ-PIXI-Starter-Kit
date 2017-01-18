@@ -80,7 +80,7 @@ This is your project directory structure.
 
 ![](./compartments/assets/media/structure.png?raw=true)
 
-For your Phaser project, you will be using the `assets` and `layout` directories.
+For your Phaser project, you will be using the `assets` and `layouts` directories.
 
 
 ##### /assets
@@ -145,7 +145,7 @@ When linking to files in `assets`, paths should look like: `/assets/scripts/file
 
 	 ![](./compartments/assets/media/airship_serve.png?raw=true)
 
-	 This starts the server that will render all of your project files locally. 
+	 This starts the server that will render all of your project files locally.
 
 	- Open your browser and navigate to `http://localhost:9001`. To view any changes made to your game files, refresh this page.
 
@@ -166,7 +166,7 @@ When linking to files in `assets`, paths should look like: `/assets/scripts/file
 	 Enter `yes` or `y`.
 	![](./compartments/assets/media/airship_manifest2.png?raw=true)
 
-2. ##### Airship Launch
+2. ##### [Airship Launch](#airship-launch)
 
 	- In your terminal, run `airship launch`.
 
