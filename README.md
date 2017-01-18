@@ -73,11 +73,11 @@ This project documents how to setup your Phaser game with Airship.
 
 - In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`. There will be some markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
 
-<img src="./compartments/assets/media/root.html-hello.png?raw=true" width="auto" height="auto">
+  <img src="./compartments/assets/media/root.html-hello.png?raw=true" width="auto" height="auto">
 
 - Reload `localhost:9001` to check that your changes updated. 
 
-<img src="./compartments/assets/media/helloworld.png?raw=true" width="auto" height="auto">
+  <img src="./compartments/assets/media/helloworld.png?raw=true" width="auto" height="auto">
 
 - Now you're ready to go!
 
@@ -86,7 +86,9 @@ This project documents how to setup your Phaser game with Airship.
 # Documentation
 
 ### Project Directory Structure
+
 - This is your project directory structure.
+
   <img src="./compartments/assets/media/structure.png?raw=true" width="275" height="auto">
 
 - For your Phaser project, you will be using the `assets`, `layouts`, and `template` directories.
@@ -120,7 +122,7 @@ This project documents how to setup your Phaser game with Airship.
 
 ## Adding Game Assets
 
-### 1. /scripts
+### 1. Add your scripts:
 
   - In your project, navigate to `/compartments/assets/scripts/`.
 
@@ -132,14 +134,14 @@ This project documents how to setup your Phaser game with Airship.
   
   <img src="./compartments/assets/media/added-scripts.png?raw=true" width="auto" height="auto">
 
-### 2. /media
+### 2. Add your media:
   - In your project, navigate to `/compartments/assets/media/`.
 
   - Add your game images, music, sfx, etc.
 
   <img src="./compartments/assets/media/media.png?raw=true" width="300" height="auto">
 
-### 3. /styles
+### 3. Add your styles:
   - In your project, navigate to `/compartments/assets/styles/`.
 
   - Add your css files to the head of `/compartments/layouts/application.html`.
@@ -180,12 +182,15 @@ This project documents how to setup your Phaser game with Airship.
 - Open your browser and navigate to `projectname.airshipcms.io`.
 
 - If you encounter this error while attempting to launch, [log in](#airship-login) to your Airship project then try again. 
+
   ![](./compartments/assets/media/unauthorized.png?raw=true)
 
 - If you encounter an error like this while attempting to launch, you may have added a file type to the wrong directory or the file type you have added is unsupported. Please refer to the [Project Directory Structure](#project-directory-structure) section. 
+
   ![](./compartments/assets/media/upload_failed.png?raw=true)
 
 - If you encounter an error like this, or another error about your `manifest` needing to be updated, while attempting to launch, your `manifest` may be out of sync with your local files. The `manifest` simply tracks differences between files in your local development workspace and the server. The `manifest` may sometimes be out of sync when there are `launch` or `land` errors, or if you have multiple people working on a project. Simply run `airship manifest` if prompted, and say `y` to generate the manifest file. This is not desctructive. No files or assets will be overwritten with this action. 
+
   <img src="./compartments/assets/media/nothing-left-to-do.png?raw=true" width="700" height="auto">
 
 ---
