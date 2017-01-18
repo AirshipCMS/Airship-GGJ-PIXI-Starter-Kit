@@ -1,6 +1,5 @@
 # Airship Phaser Project
 
-
 ## Contents
 
 * [**Description**](#description)
@@ -16,27 +15,26 @@
 
 # Description
 
-
 This project documents how to setup your Phaser game with Airship.
 
 ---
 
 # Setup
 
-1. ##### [ Airship Login ](#airship-login)
+##### 1. [ Airship Login ](#airship-login)
 
-  - In your terminal, navigate to your project directory.
+In your terminal, navigate to your project directory.
 
-  - Run `airship login projectname`.
+Run `airship login projectname`.
 
-   ![](./compartments/assets/media/airship_login.png?raw=true)
+![](./compartments/assets/media/airship_login.png?raw=true)
 
-  - After running `airship login projectname`, you will be informed that you aren't in an AirshipCMS project. You will be asked if you would you like to set the current directory as the AirshipCMS project root for your site.
+After running `airship login projectname`, you will be informed that you aren't in an AirshipCMS project. You will be asked if you would you like to set the current directory as the AirshipCMS project root for your site.
 
-   Enter `yes`or `y`.
-  ![login](./compartments/assets/media/airship_login3.png?raw=true)
+Enter `yes`or `y`.
+![login](./compartments/assets/media/airship_login3.png?raw=true)
 
-  - Enter your Airship credentials. ![login2](./compartments/assets/media/airship_login2.png?raw=true)
+Enter your Airship credentials. ![login2](./compartments/assets/media/airship_login2.png?raw=true)
 
 2. ##### [ Airship Land ](#airship-land)
 
