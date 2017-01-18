@@ -23,69 +23,70 @@ This project documents how to setup your Phaser game with Airship.
 
 ### 1. [ Airship Login ](#airship-login)
 
-In your terminal, navigate to your project directory.
+- In your terminal, navigate to your project directory.
 
-Run `airship login projectname`.
+- Run `airship login projectname`, where projectname is the airship subdomain of your project.
 
 ![](./compartments/assets/media/airship_login.png?raw=true)
 
-After running `airship login projectname`, you will be informed that you aren't in an AirshipCMS project. You will be asked if you would you like to set the current directory as the AirshipCMS project root for your site.
+- After running `airship login projectname`, you will be informed that you aren't in an Airship CMS project. You will be asked if you would you like to set the current directory as the Airship CMS project root for your site.
 
-Enter `yes`or `y`.
+- Enter `yes`or `y`.
+
 ![login](./compartments/assets/media/airship_login3.png?raw=true)
 
-Enter your Airship credentials. ![login2](./compartments/assets/media/airship_login2.png?raw=true)
+- Enter your Airship credentials. 
+
+![login2](./compartments/assets/media/airship_login2.png?raw=true)
 
 ### 2. [ Airship Land ](#airship-land)
 
-In your terminal, run `airship land`.
-
-This will pull down all necessary Airship config files and initial project structure.
+- In your terminal, run `airship land`.
 
 ![land](./compartments/assets/media/airship_land.png?raw=true)
 
-After running `airship land` you will be asked if you want to download compartments to your project.
+- This will pull down all necessary Airship config files and initial project structure. You will be asked if you want to download compartments to your project.
 
-Enter `yes` or `y`.
+- Enter `yes` or `y`.
 
 ![land2](./compartments/assets/media/airship_land2.png?raw=true)
 
 ### 3. [ Airship Serve ](#airship-serve)
 
-In your terminal, run `airship serve`.
+- In your terminal, run `airship serve`.
 
 ![serve](./compartments/assets/media/airship_serve.png?raw=true)
 
-This starts the server that will render all of your project files locally. 
+- This starts the server that will render all of your project files locally. 
 
-Open your browser and navigate to `http://localhost:9001`. The page should look like the image below.
+- Open your browser and navigate to `http://localhost:9001`. The page should look like the image below.
 
 ![](./compartments/assets/media/airship_serve2.png?raw=true)
-[@TE--REPLACE WITH localhost9001.png when it is ready]
+[@TE--REPLACE WITH localhost9001.png --coming soon!!]
 
-The content you see on this page is rendered by `/compartments/templates/root.html`. `root.html` is then injected into `/compartments/layouts/application.html`.
+- The content you see on this page is rendered by the template `/compartments/templates/root.html`, which is then injected into the layout `/compartments/layouts/application.html`.
 
-In your project, navigate to `/compartments/layouts/`. In this directory, open `application.html`.
+- In your project, navigate to `/compartments/layouts/`. In this directory, open `application.html`.
 
 ![](./compartments/assets/media/application.png?raw=true)
 [@TE--REPLACE WITH application.html.png]
 
-In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
+- In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
 
-In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`.
+- In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`.
 
 ![](./compartments/assets/media/application2.png?raw=true)
 [@TE--REPLACE WITH root.html-initial.png -- coming soon!!]
 
-There will be a lot of markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
+- There will be a lot of markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
 
 [@TE-- add root.html-hello.png]
 
-Reload `localhost:9001` to check that your changes updated. 
+- Reload `localhost:9001` to check that your changes updated. 
 
 [@TE-- add helloworld.png]
 
-Now you're ready to go!
+- Now you're ready to go!
 
 ---
 
@@ -122,9 +123,7 @@ The templates directory mirrors the template that is set for the page in the Air
 
 - `root.html`: This is the default layout. The template includes markup specific to a single page of your project.
 
-In this project, the layout used is application.html and the template used is called root.html. You can change these file names or create new pages, layouts and templates, as long as they are also linked to the appropriate pages in the setup section of the Airship CMS Portal.
-
-For this project, you will use `application.html` or `root.html` to link to your assets, depending on where and when you want scripts to load.
+In this project, the layout used is `application.html` and the template used is `root.html`. You can change these file names or create new pages, layouts and templates, as long as they are also linked to the appropriate pages in the setup section of the Airship CMS Portal. Use either `application.html` or `root.html` to link to your assets, depending on where and when you want scripts to load.
 
 ---
 
@@ -153,9 +152,8 @@ For this project, you will use `application.html` or `root.html` to link to your
 ### 3. /styles
   - In your project, navigate to `/compartments/assets/styles/`.
 
-  - Add your css files.
-
   - Add your css files to the head of `/compartments/layouts/application.html`.
+
   ![](./compartments/assets/media/styles.png?raw=true)
   [@TE replace with jumpslide.css.png]
 
