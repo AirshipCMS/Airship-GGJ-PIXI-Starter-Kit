@@ -21,7 +21,7 @@ This project documents how to setup your Phaser game with Airship.
 
 # Setup
 
-##### 1. [ Airship Login ](#airship-login)
+### 1. [ Airship Login ](#airship-login)
 
 In your terminal, navigate to your project directory.
 
@@ -36,54 +36,56 @@ Enter `yes`or `y`.
 
 Enter your Airship credentials. ![login2](./compartments/assets/media/airship_login2.png?raw=true)
 
-2. ##### [ Airship Land ](#airship-land)
+### 2. [ Airship Land ](#airship-land)
 
-  - In your terminal, run `airship land`.
+In your terminal, run `airship land`.
 
-   This will pull down all necessary Airship config files and initial project structure.
+This will pull down all necessary Airship config files and initial project structure.
 
-   ![land](./compartments/assets/media/airship_land.png?raw=true)
+![land](./compartments/assets/media/airship_land.png?raw=true)
 
-  - After running `airship land` you will be asked if you want to download compartments to your project.
+After running `airship land` you will be asked if you want to download compartments to your project.
 
-  Enter `yes` or `y`.
+Enter `yes` or `y`.
 
-  ![land2](./compartments/assets/media/airship_land2.png?raw=true)
+![land2](./compartments/assets/media/airship_land2.png?raw=true)
 
-3. ##### [ Airship Serve ](#airship-serve)
-  - In your terminal, run `airship serve`.
+### 3. [ Airship Serve ](#airship-serve)
 
-  ![serve](./compartments/assets/media/airship_serve.png?raw=true)
+In your terminal, run `airship serve`.
 
-  This starts the server that will render all of your project files locally. 
+![serve](./compartments/assets/media/airship_serve.png?raw=true)
 
-  - Open your browser and navigate to `http://localhost:9001`. The page should look like the image below.
-  ![](./compartments/assets/media/airship_serve2.png?raw=true)
-  [@TE--REPLACE WITH localhost9001.png when it is ready]
+This starts the server that will render all of your project files locally. 
 
-  The content you see on this page is rendered by `/compartments/templates/root.html`. `root.html` is then injected into `/compartments/layouts/application.html`.
+Open your browser and navigate to `http://localhost:9001`. The page should look like the image below.
 
-  - In your project, navigate to `/compartments/layouts/`. In this directory, open `application.html`.
+![](./compartments/assets/media/airship_serve2.png?raw=true)
+[@TE--REPLACE WITH localhost9001.png when it is ready]
 
-  ![](./compartments/assets/media/application.png?raw=true)
-  [@TE--REPLACE WITH application.html.png]
+The content you see on this page is rendered by `/compartments/templates/root.html`. `root.html` is then injected into `/compartments/layouts/application.html`.
 
-  In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
+In your project, navigate to `/compartments/layouts/`. In this directory, open `application.html`.
 
-  In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`.
+![](./compartments/assets/media/application.png?raw=true)
+[@TE--REPLACE WITH application.html.png]
 
-  ![](./compartments/assets/media/application2.png?raw=true)
-  [@TE--REPLACE WITH root.html-initial.png -- coming soon!!]
+In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
 
-  There will be a lot of markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
+In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`.
 
-  [@TE-- add root.html-hello.png]
+![](./compartments/assets/media/application2.png?raw=true)
+[@TE--REPLACE WITH root.html-initial.png -- coming soon!!]
 
-  Reload `localhost:9001` to check that your changes updated. 
+There will be a lot of markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
 
-  [@TE-- add helloworld.png]
+[@TE-- add root.html-hello.png]
 
-  Now you're ready to go!
+Reload `localhost:9001` to check that your changes updated. 
+
+[@TE-- add helloworld.png]
+
+Now you're ready to go!
 
 ---
 
