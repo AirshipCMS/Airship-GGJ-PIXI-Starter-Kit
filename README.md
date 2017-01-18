@@ -86,37 +86,35 @@ This project documents how to setup your Phaser game with Airship.
 # Documentation
 
 ### Project Directory Structure
-This is your project directory structure.
+- This is your project directory structure.
+  <img src="./compartments/assets/media/structure.png?raw=true" width="275" height="auto">
 
-<img src="./compartments/assets/media/structure.png?raw=true" width="275" height="auto">
-
-For your Phaser project, you will be using the `assets`, `layouts`, and `template` directories.
-
+- For your Phaser project, you will be using the `assets`, `layouts`, and `template` directories.
 
 ### /assets
-The assets directory contains 3 subdirectories: `scripts`, `styles` and `media`.
+- The assets directory contains 3 subdirectories: `scripts`, `styles` and `media`.
 
-- `/scripts:` This directory may only contain scripts and text-based files (examples: .js, .xml, .json, .html). Do not put any binary files here. They will be rejected when you launch your project. Maximum file size is 5M. For this project, this will contain Phaser and game scripts. 
+  - `/scripts:` This directory may only contain scripts and text-based files (examples: .js, .xml, .json, .html). Do not put any binary files here. They will be rejected when you launch your project. Maximum file size is 5M. For this project, this will contain Phaser and game scripts. 
 
-- `/media`: This directory may contain scripts, text files, and any other media such as images, music, sound effects, etc (.png, .jpg, .mp3, etc). Maximum file size is 10M.
+  - `/media`: This directory may contain scripts, text files, and any other media such as images, music, sound effects, etc (.png, .jpg, .mp3, etc). Maximum file size is 10M.
 
-- `/styles`: This directory contains styles (.css).
+  - `/styles`: This directory contains styles (.css).
 
-Do not add any other directories or files immediately inside of `/assets`. The `/scripts`, `/styles` and `/media` directories may have any number of subdirectories.
+- Do not add any other directories or files immediately inside of `/assets`. The `/scripts`, `/styles` and `/media` directories may have any number of subdirectories.
 
 **File Paths**: When linking to files in assets, paths should look like: `/assets/scripts/filename.js` or `/assets/media/filename.png`.
 
 ### /layouts
-The layouts directory mirrors the layout that is set for the page in the Airship CMS Portal.
+- The layouts directory mirrors the layout that is set for the page in the Airship CMS Portal.
 
-- `application.html`: This is the default layout. The layout typically includes global links to your media, scripts and styles, and any markup that should appear on all pages of your project.
+  - `application.html`: This is the default layout. The layout typically includes global links to your media, scripts and styles, and any markup that should appear on all pages of your project.
 
 ### /templates
-The templates directory mirrors the template that is set for the page in the Airship CMS Portal.
+- The templates directory mirrors the template that is set for the page in the Airship CMS Portal.
 
-- `root.html`: This is the default layout. The template includes markup specific to a single page of your project.
+  - `root.html`: This is the default layout. The template includes markup specific to a single page of your project.
 
-In this project, the layout used is `application.html` and the template used is `root.html`. You can change these file names or create new pages, layouts and templates, as long as they are also linked to the appropriate pages in the setup section of the Airship CMS Portal. Use either `application.html` or `root.html` to link to your assets, depending on where and when you want scripts to load.
+- In this project, the layout used is `application.html` and the template used is `root.html`. You can change these file names or create new pages, layouts and templates, as long as they are also linked to the appropriate pages in the setup section of the Airship CMS Portal. Use either `application.html` or `root.html` to link to your assets, depending on where and when you want scripts to load.
 
 ---
 
@@ -202,37 +200,37 @@ airship
 ```
 
 ### airship login 
-Log in to your project with your _superadmin_ access level *email*, your *password*, and your AirshipCMS *subdomain*.  
+- Log in to your project with your _superadmin_ access level *email*, your *password*, and your AirshipCMS *subdomain*.  
 ```
 airship login projectname
 ```
-*projectname* is the subdomain for your project. If your airshipcms.io project subdomain is "marketing.airshipcms.io", you would enter `airship login marketing` or `airship login marketing.airshipcms.io`.
+- *projectname* is the subdomain for your project. If your airshipcms.io project subdomain is "marketing.airshipcms.io", you would enter `airship login marketing` or `airship login marketing.airshipcms.io`.
 
-This will connect you to the airship server for the project globally on your computer. If you have landed the project in more than one location, logging in will open the connection to airship for the project in all those locations.
+- This will connect you to the airship server for the project globally on your computer. If you have landed the project in more than one location, logging in will open the connection to airship for the project in all those locations.
 
 ### airship land
-Do this the *first time you work on the project*. This pulls down necessary Airship config files and initial project structure. After the first time, you should have all your files frequently backed up in Git, so you will never really have to run _airship land_ anymore, and you can simply create and launch your new files without ever landing again.  
+- Do this the *first time you work on the project*. This pulls down necessary Airship config files and initial project structure. After the first time, you should have all your files frequently backed up in Git, so you will never really have to run _airship land_ anymore, and you can simply create and launch your new files without ever landing again.  
 ```
 airship land
 ```
-If for some reason you want to pull down the files that are live, you can run airship land again. *Be sure you have backed up your local files* because airship land will overwrite them.
+- If for some reason you want to pull down the files that are live, you can run airship land again. *Be sure you have backed up your local files* because airship land will overwrite them.
 
 ### airship serve
-Airship serve runs the server that will locally render layouts, templates, and pull content from Airship CMS. Keep this runnind in a dedicated a terminal tab, and use other tabs to run other airship commands and other project processes.
+- Airship serve runs the server that will locally render layouts, templates, and pull content from Airship CMS. Keep this runnind in a dedicated a terminal tab, and use other tabs to run other airship commands and other project processes.
 
 ```
 airship serve
 ```
 
 ### airship launch
-When you are ready to launch your local changes to production, run *airship launch*. This will overwrite all files on the server to match your local project structure. If you have added files locally, they will be added to the server. If you have deleted files locally, they will be deleted from the server.
+- When you are ready to launch your local changes to production, run *airship launch*. This will overwrite all files on the server to match your local project structure. If you have added files locally, they will be added to the server. If you have deleted files locally, they will be deleted from the server.
 ```
 airship launch
 ```
-If for some reason you need to back up the state of production compartments, then *airship land* files in a separate directory, or better yet, you already have them backed up in a different branch using your source code management tool.
+- If for some reason you need to back up the state of production compartments, then *airship land* files in a separate directory, or better yet, you already have them backed up in a different branch using your source code management tool.
 
 ### airship upgrade
-If the launcher notifies you that an update is available for the launcher, run this command.
+- If the launcher notifies you that an update is available for the launcher, run this command.
 ```
 airship upgrade
 ```
@@ -241,16 +239,10 @@ airship upgrade
 ```
 airship logout
 ```
-Note: `airship logout` disconnects you from the airship server for the project globally on your computer. If you have landed the project in more than one location, logging out will close the connection to airship for the project in all those locations.
+- Note: `airship logout` disconnects you from the airship server for the project globally on your computer. If you have landed the project in more than one location, logging out will close the connection to airship for the project in all those locations.
 
 ----
 
 ## Source Code Management
-If you are using a source code management tool, you will probabaly only need to `airship land` the first time you set up the project. If your code is safely committed, you may occasionally want to run `airship land` to investigate diffs between local and production files. 
+- If you are using a source code management tool, you will probabaly only need to `airship land` the first time you set up the project. If your code is safely committed, you may occasionally want to run `airship land` to investigate diffs between local and production files. 
 Be sure to `.gitignore` your `bower_components and node_modules`. It is also safe to .gitignore the `.airship` directory of your project.
-
-
-UPDATE: You may need to update the foundation partials with partials from the bower components if Foudnation updates.
-
-Also explain components.
-Rip out foundation settings and make user put it in manually (most up to date)
