@@ -68,23 +68,17 @@ This project documents how to setup your Phaser game with Airship.
 
 - In your project, navigate to `/compartments/layouts/`. In this directory, open `application.html`.
 
-![](./compartments/assets/media/application.png?raw=true)
-[@TE--REPLACE WITH application.html.png]
+<img src="./compartments/assets/media/application.html.png?raw=true" width="auto" height="auto">
 
 - In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
 
-- In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`.
+- In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`. There will be a lot of markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
 
-![](./compartments/assets/media/application2.png?raw=true)
-[@TE--REPLACE WITH root.html-initial.png -- coming soon!!]
-
-- There will be a lot of markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
-
-[@TE-- add root.html-hello.png]
+<img src="./compartments/assets/media/root.html-hello.png?raw=true" width="auto" height="auto">
 
 - Reload `localhost:9001` to check that your changes updated. 
 
-[@TE-- add helloworld.png]
+<img src="./compartments/assets/media/helloworld.png?raw=true" width="auto" height="auto">
 
 - Now you're ready to go!
 
@@ -139,8 +133,7 @@ In this project, the layout used is `application.html` and the template used is 
 
   - Add your script files to the body of `/compartments/layouts/application.html` and update the `<title>` with your project title.
   
-  ![](./compartments/assets/media/html_scripts.png?raw=true)
-  [@TE replace with added-scripts.png]
+  <img src="./compartments/assets/media/added-scripts.png?raw=true" width="auto" height="auto">
 
 ### 2. /media
   - In your project, navigate to `/compartments/assets/media/`.
@@ -154,8 +147,7 @@ In this project, the layout used is `application.html` and the template used is 
 
   - Add your css files to the head of `/compartments/layouts/application.html`.
 
-  ![](./compartments/assets/media/styles.png?raw=true)
-  [@TE replace with jumpslide.css.png]
+  <img src="./compartments/assets/media/jumpslide.css.png?raw=true" width="auto" height="auto">
 
 ---
 
@@ -195,7 +187,7 @@ In this project, the layout used is `application.html` and the template used is 
 * If you encounter an error like this while attempting to launch, you may have added a file type to the wrong directory or the file type you have added is unsupported. Please refer to the [Project Directory Structure](#project-directory-structure) section. ![](./compartments/assets/media/upload_failed.png?raw=true)
 
 * If you encounter an error like this, or another error about your `manifest` needing to be updated, while attempting to launch, your `manifest` may be out of sync with your local files. The `manifest` simply tracks differences between files in your local development workspace and the server. The `manifest` may sometimes be out of sync when there are `launch` or `land` errors, or if you have multiple people working on a project. Simply run `airship manifest` if prompted, and say `y` to generate the manifest file. This is not desctructive. No files or assets will be overwritten with this action.
-[@TE add nothing-left-to-do.png]
+<img src="./compartments/assets/media/nothing-left-to-do.png?raw=true" width="500" height="auto">
 
 ---
 
