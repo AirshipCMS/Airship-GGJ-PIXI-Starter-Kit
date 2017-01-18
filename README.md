@@ -202,7 +202,7 @@ For this project, you will use `application.html` or `root.html` to link to your
 
 ---
 
-## [Airship CLI Commands](#airship-cli)
+## [Airship CLI](#airship-cli)
 
 ### List all airship commands
 This lists all airship cli commands.
