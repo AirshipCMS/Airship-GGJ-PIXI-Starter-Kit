@@ -27,47 +27,47 @@ This project documents how to setup your Phaser game with Airship.
 
 - Run `airship login projectname`, where projectname is the airship subdomain of your project.
   
-<img src="./compartments/assets/media/airship_login.png?raw=true" width="300" height="auto">
+  <img src="./compartments/assets/media/airship_login.png?raw=true" width="300" height="auto">
 
 - After running `airship login projectname`, you will be informed that you aren't in an Airship CMS project. You will be asked if you would you like to set the current directory as the Airship CMS project root for your site.
 
 - Enter `yes`or `y`.
 
-<img src="./compartments/assets/media/airship_login3.png?raw=true" width="auto" height="auto">
+  <img src="./compartments/assets/media/airship_login3.png?raw=true" width="auto" height="auto">
 
 - Enter your Airship credentials. 
 
-<img src="./compartments/assets/media/airship_login2.png?raw=true" width="500" height="auto">
+  <img src="./compartments/assets/media/airship_login2.png?raw=true" width="500" height="auto">
 
 ### 2. [ Airship Land ](#airship-land)
 
 - In your terminal, run `airship land`.
 
-<img src="./compartments/assets/media/airship_land.png?raw=true" width="200" height="auto">
+  <img src="./compartments/assets/media/airship_land.png?raw=true" width="200" height="auto">
 
 - This will pull down all necessary Airship config files and initial project structure. You will be asked if you want to download compartments to your project.
 
 - Enter `yes` or `y`.
 
-<img src="./compartments/assets/media/airship_land2.png?raw=true" width="auto" height="auto">
+  <img src="./compartments/assets/media/airship_land2.png?raw=true" width="auto" height="auto">
 
 ### 3. [ Airship Serve ](#airship-serve)
 
 - In your terminal, run `airship serve`.
 
-<img src="./compartments/assets/media/airship_serve.png?raw=true" width="200" height="auto">
+  <img src="./compartments/assets/media/airship_serve.png?raw=true" width="200" height="auto">
 
 - This starts the server that will render all of your project files locally. 
 
 - Open your browser and navigate to `http://localhost:9001`. The page should look like the image below.
 
-![](./compartments/assets/media/airship_serve2.png?raw=true)
+  ![](./compartments/assets/media/airship_serve2.png?raw=true)
 
 - The content you see on this page is rendered by the template `/compartments/templates/root.html`, which is then injected into the layout `/compartments/layouts/application.html`.
 
 - In your project, navigate to `/compartments/layouts/`. In this directory, open `application.html`.
 
-<img src="./compartments/assets/media/application.html.png?raw=true" width="auto" height="auto">
+  <img src="./compartments/assets/media/application.html.png?raw=true" width="auto" height="auto">
 
 - In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
 
