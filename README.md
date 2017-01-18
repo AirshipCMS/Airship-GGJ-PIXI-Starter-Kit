@@ -27,35 +27,35 @@ This project documents how to setup your Phaser game with Airship.
 
 - Run `airship login projectname`, where projectname is the airship subdomain of your project.
   
-  <img src="./compartments/assets/media/airship_login.png?raw=true" width="300" height="auto">
+<img src="./compartments/assets/media/airship_login.png?raw=true" width="300" height="auto">
 
 - After running `airship login projectname`, you will be informed that you aren't in an Airship CMS project. You will be asked if you would you like to set the current directory as the Airship CMS project root for your site.
 
 - Enter `yes`or `y`.
 
-![login](./compartments/assets/media/airship_login3.png?raw=true)
+<img src="./compartments/assets/media/airship_login3.png?raw=true" width="auto" height="auto">
 
 - Enter your Airship credentials. 
 
-![login2](./compartments/assets/media/airship_login2.png?raw=true)
+<img src="./compartments/assets/media/airship_login2.png?raw=true" width="500" height="auto">
 
 ### 2. [ Airship Land ](#airship-land)
 
 - In your terminal, run `airship land`.
 
-![land](./compartments/assets/media/airship_land.png?raw=true)
+<img src="./compartments/assets/media/airship_land.png?raw=true" width="250" height="auto">
 
 - This will pull down all necessary Airship config files and initial project structure. You will be asked if you want to download compartments to your project.
 
 - Enter `yes` or `y`.
 
-![land2](./compartments/assets/media/airship_land2.png?raw=true)
+<img src="./compartments/assets/media/airship_land2.png?raw=true" width="auto" height="auto">
 
 ### 3. [ Airship Serve ](#airship-serve)
 
 - In your terminal, run `airship serve`.
 
-![serve](./compartments/assets/media/airship_serve.png?raw=true)
+<img src="./compartments/assets/media/airship_serve.png?raw=true" width="250" height="auto">
 
 - This starts the server that will render all of your project files locally. 
 
@@ -95,7 +95,7 @@ This project documents how to setup your Phaser game with Airship.
 ### Project Directory Structure
 This is your project directory structure.
 
-![](./compartments/assets/media/structure.png?raw=true)
+<img src="./compartments/assets/media/structure.png?raw=true" width="150" height="auto">
 
 For your Phaser project, you will be using the `assets`, `layouts`, and `template` directories.
 
@@ -135,7 +135,7 @@ In this project, the layout used is `application.html` and the template used is 
 
   - Add your game scripts.
 
-   ![](./compartments/assets/media/scripts.png?raw=true)
+  <img src="./compartments/assets/media/scripts.png?raw=true" width="150" height="auto">
 
   - Add your script files to the body of `/compartments/layouts/application.html` and update the `<title>` with your project title.
   
@@ -147,7 +147,7 @@ In this project, the layout used is `application.html` and the template used is 
 
   - Add your game images, music, sfx, etc.
 
-   ![](./compartments/assets/media/media.png?raw=true)
+  <img src="./compartments/assets/media/media.png?raw=true" width="200" height="auto">
 
 ### 3. /styles
   - In your project, navigate to `/compartments/assets/styles/`.
@@ -165,7 +165,7 @@ In this project, the layout used is `application.html` and the template used is 
 
   - If you aren't already running the `airship serve` command, then in your terminal, run `airship serve`.
 
-  ![](./compartments/assets/media/airship_serve.png?raw=true)
+  <img src="./compartments/assets/media/airship_serve.png?raw=true" width="250" height="auto">
 
   This starts the server that will render all of your project files locally.
 
@@ -181,7 +181,7 @@ In this project, the layout used is `application.html` and the template used is 
 
 - In your terminal, run `airship launch`.
 
-  ![](./compartments/assets/media/airship_launch.png?raw=true)
+  <img src="./compartments/assets/media/airship_launch.png?raw=true" width="250" height="auto">
 
 - This will ask you to upload compartments. This will overwrite everything on the server.
 
