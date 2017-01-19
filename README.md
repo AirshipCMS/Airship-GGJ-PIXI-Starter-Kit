@@ -9,6 +9,7 @@
     * [Adding Game Assets](#adding-game-assets)
     * [Serving Your Game Locally](#serving-your-game-locally)
     * [Launching Your Game](#launching-your-game)
+    * [AirshipCMS Admin Portal](#airship-cms-admin-portal)
     * [Airship CLI](#airship-cli)
 
 ---
@@ -192,6 +193,164 @@ This project documents how to setup your Phaser game with Airship.
 - If you encounter an error like this, or another error about your `manifest` needing to be updated, while attempting to launch, your `manifest` may be out of sync with your local files. The `manifest` simply tracks differences between files in your local development workspace and the server. The `manifest` may sometimes be out of sync when there are `launch` or `land` errors, or if you have multiple people working on a project. Simply run `airship manifest` if prompted, and say `y` to generate the manifest file. This is not desctructive. No files or assets will be overwritten with this action. 
 
   <img src="./compartments/assets/media/nothing-left-to-do.png?raw=true" width="700" height="auto">
+
+---
+
+### AirshipCMS Admin Portal
+
+### Login
+
+- In your browser, navigate to `http://projectname.airshipcms.io/admin`.
+
+  <img src="./compartments/assets/media/admin_portal_login.png?raw=true">
+
+  If you haven't already logged into the admin portal, you will be redirected to the login page.
+
+  Enter your credentials.
+
+### Users
+
+- Click `users` in the sidebar.
+
+  <img src="./compartments/assets/media/sidebar_users.png" width="150px" height="auto">
+
+- This page displays a list of users existng on this site.
+
+ <img src="./compartments/assets/media/users_list.png">
+
+- To add a new user, click on the `New User` button located in the top right corner.
+
+ <img src="./compartments/assets/media/new_user_bttn.png">
+
+- On this page, you'll see a form that requires your new user's `email`, `password`, `password confirmation` and `user type`.
+ <img src="./compartments/assets/media/users_create.png">
+
+ There are 4 user types: `superadmin`, `admin`, `user` and `noaccess`.
+ <img src="./compartments/assets/media/user_type.png">
+
+ If the new user will be running Airship commands like `airship serve` or `airship launch`, you will need to set them as `admin` or `superadmin`.
+
+ After adding your new user, he or she may log into the admin portal and into the project by running `airship login projectname` in their terminal.
+
+- To edit an existing user, click the pencil icon attached to the user.
+
+  <img src="./compartments/assets/media/user_list_pencil.png">
+
+  - On this page, the selected user's `email`, `password` and `user type` can be changed.
+
+  	<img src="./compartments/assets/media/users_edit.png">
+
+  	There is also an option to delete the user.
+
+  	Only a `superadmin` has access to edit another `superadmin`.
+
+### Pages
+
+- Click `pages` in the sidebar.
+
+ <img src="./compartments/assets/media/pages_sidebar.png?raw=true" width="150px" height="auto">
+
+ This page lists all of your site's existing pages.
+
+ Your site was initialzed with `Landing Page`.
+
+ This page links to `/compartments/templates/` and `/compartments/layout/` of your project.
+
+ <img src="./compartments/assets/media/pages_list.png">
+
+ A superadmin user will see options to create a new page and edit or modify an existing page. An admin is only granted access to edit existing pages.
+
+ #### Modify
+
+ - click on the wrench icon of the page you want to modify.
+
+ - ##### Page Setup
+
+  <img src="./compartments/assets/media/page_modify.png">
+
+  This section displays the pages's title, permalink, ID, when it was created and when it was last updated.
+
+ - ##### Page Layout & Template.
+
+   	<img src="./compartments/assets/media/page_layout.png">
+	
+   	This section lets you create/select the layout and template that this page will used.
+	
+   	This page is using the initial Airship config files that we've pulled down to our project using `airship land`.
+	
+   	Layout files must go into `/compartments/layouts/` of your project.
+	
+   	Template files must go into `/compartments/templates/` of your project.
+
+ - ##### Page Fields
+ 
+   <img src="./compartments/assets/media/page_fields.png">
+
+   Here, you'll find a list of predefined fields: `ID`, `Created At`, `Updated At` and `Title`. These fields cannot be edited.
+
+   Page fields can be used from your project.
+
+   You can add more fields to your page.
+
+   If you wanted to add game instructions to your page, start by filling in the title of your new field. For this example, the title "How to Play".
+
+   <img src="./compartments/assets/media/add_field_title.png">
+
+   The variable name will be filled automatically. This variable will be used to access it from your template later on.
+
+   You can set the type of your page field.
+
+   <img src="./compartments/assets/media/add_field_type.png" width='200px' height='auto'>
+
+   Types include: `text`, `textarea`, `richtext area`, `image`, `file`, `link`, `number`, `radio`, `select`, `multiselect`, `checkbox`, `list of images`, `list of files`, `  list of links`, `related aerostats` and `date`.
+  
+   `text` was selected for this example.
+  
+   Click the `Add New Field` button.
+  
+   You should see your new field listed under Page Fields.
+  
+   <img src="./compartments/assets/media/field_added.png">
+   
+  
+   Click the `Modify Page` button located in the bottom and top right corners of the page.
+
+   <img src="./compartments/assets/media/modify_page_bttn.png">
+
+ #### Edit Page
+
+ - To edit a page, click on the pencil icon.
+
+  <img src="./compartments/assets/media/page_edit_pencil.png">
+
+ - You can see all of your page fields here.
+  <img src="./compartments/assets/media/page_edit_field_added.png">
+
+ - You can change the value of any field.
+
+ - Edit the value of the `How to Play` field that was created earlier.
+
+  <img src="./compartments/assets/media/how_to_play.png">
+
+ - Click the `Save & Close` button located in the top or bottom right corner.
+
+   <img src="./compartments/assets/media/save_page_bttn.png">
+
+ - To use this new field on your site's page, go to `/compartments/templates/root.html` in your project.
+
+ - Add your field: `{{ fields.variable_name }}`.
+
+   <img src="./compartments/assets/media/template_how_to_play.png">
+
+ - If your server is running, navigate to `http://localhost:9001` in your browser.
+
+   <img src="./compartments/assets/media/how_to_play_added.png">
+
+   You should now see your field on your page!
+
+ - If you forget your field's variable name, you can add `{{{ help }}}` to your template.
+
+   This will render a list of all your fields.
 
 ---
 
