@@ -1,4 +1,4 @@
-# Airship Phaser Project
+# Airship PIXI Starter Kit and Deployment Guide
 
 ## Contents
 
@@ -16,7 +16,7 @@
 
 # Description
 
-This project documents how to setup your Phaser game with Airship.
+This project documents how to setup your PIXI game to be deployed with Airship.
 
 ---
 
@@ -70,9 +70,9 @@ This project documents how to setup your Phaser game with Airship.
 
   <img src="./assets/application_html.png?raw=true" width="auto" height="auto">
 
-- In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
+- In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a PIXI or Phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
 
-- In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`. There will be some markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
+- In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`. There will be some markup in this template. You won't need any of it for your PIXI game project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
 
   <img src="./assets/root-html-hello.png?raw=true" width="auto" height="auto">
 
@@ -92,12 +92,12 @@ This project documents how to setup your Phaser game with Airship.
 
   <img src="./assets/structure.png?raw=true" width="275" height="auto">
 
-- For your Phaser project, you will be using the `assets`, `layouts`, and `template` directories.
+- For your PIXI Game project, you will be using the `assets`, `layouts`, and `template` directories.
 
 ### /assets
 - The assets directory contains 3 subdirectories: `scripts`, `styles` and `media`.
 
-  - `/scripts:` This directory may only contain scripts and text-based files (examples: .js, .xml, .json, .html). Do not put any binary files here. They will be rejected when you launch your project. Maximum file size is 5M. For this project, this will contain Phaser and game scripts. 
+  - `/scripts:` This directory may only contain scripts and text-based files (examples: .js, .xml, .json, .html). Do not put any binary files here. They will be rejected when you launch your project. Maximum file size is 5M. For this project, this will contain the PIXI library and game scripts. 
 
   - `/media`: This directory may contain scripts, text files, and any other media such as images, music, sound effects, etc (.png, .jpg, .mp3, etc). Maximum file size is 10M.
 
