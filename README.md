@@ -28,57 +28,57 @@ This project documents how to setup your Phaser game with Airship.
 
 - Run `airship login projectname`, where projectname is the airship subdomain of your project.
   
-  <img src="./compartments/assets/media/airship_login.png?raw=true" width="300" height="auto">
+  <img src="./assets/airship_login.png?raw=true" width="300" height="auto">
 
 - After running `airship login projectname`, you will be informed that you aren't in an Airship CMS project. You will be asked if you would you like to set the current directory as the Airship CMS project root for your site.
 
 - Enter `yes`or `y`.
 
-  <img src="./compartments/assets/media/airship_login3.png?raw=true" width="auto" height="auto">
+  <img src="./assets/airship_login3.png?raw=true" width="auto" height="auto">
 
 - Enter your Airship credentials. 
 
-  <img src="./compartments/assets/media/airship_login2.png?raw=true" width="500" height="auto">
+  <img src="./assets/airship_login2.png?raw=true" width="500" height="auto">
 
 ### 2. [ Airship Land ](#airship-land)
 
 - In your terminal, run `airship land`.
 
-  <img src="./compartments/assets/media/airship_land.png?raw=true" width="200" height="auto">
+  <img src="./assets/airship_land.png?raw=true" width="200" height="auto">
 
 - This will pull down all necessary Airship config files and initial project structure. You will be asked if you want to download compartments to your project.
 
 - Enter `yes` or `y`.
 
-  <img src="./compartments/assets/media/airship_land2.png?raw=true" width="auto" height="auto">
+  <img src="./assets/airship_land2.png?raw=true" width="auto" height="auto">
 
 ### 3. [ Airship Serve ](#airship-serve)
 
 - In your terminal, run `airship serve`.
 
-  <img src="./compartments/assets/media/airship_serve.png?raw=true" width="200" height="auto">
+  <img src="./assets/airship_serve.png?raw=true" width="200" height="auto">
 
 - This starts the server that will render all of your project files locally. 
 
 - Open your browser and navigate to `http://localhost:9001`. The page should look like the image below.
 
-  ![](./compartments/assets/media/airship_serve2.png?raw=true)
+  ![](./assets/airship_serve2.png?raw=true)
 
 - The content you see on this page is rendered by the template `/compartments/templates/root.html`, which is then injected into the layout `/compartments/layouts/application.html`.
 
 - In your project, navigate to `/compartments/layouts/`. In this directory, open `application.html`.
 
-  <img src="./compartments/assets/media/application.html.png?raw=true" width="auto" height="auto">
+  <img src="./assets/application_html.png?raw=true" width="auto" height="auto">
 
 - In application.html, you will see a basic "container" for a rendered page. You can add global `<head>` content (such as links to stylesheets and global scripts), and optionally add global markup inside `<body>` that you want to render on every page. `{{{ template }}}` renders the template specified by the CMS. For a phaser game, we only need the main page, which is rendered by the `root.html` template from `/compartments/templates/`.
 
 - In your project, navigate to `/compartments/templates/`. In this directory, open `root.html`. There will be some markup in this template. You won't need any of it for your phaser project, so delete all of it. Add a simple `<h1>Hello World!</h1>` and Save the file.
 
-  <img src="./compartments/assets/media/root.html-hello.png?raw=true" width="auto" height="auto">
+  <img src="./assets/root-html-hello.png?raw=true" width="auto" height="auto">
 
 - Reload `localhost:9001` to check that your changes updated. 
 
-  <img src="./compartments/assets/media/helloworld.png?raw=true" width="auto" height="auto">
+  <img src="./assets/helloworld.png?raw=true" width="auto" height="auto">
 
 - Now you're ready to go!
 
@@ -90,7 +90,7 @@ This project documents how to setup your Phaser game with Airship.
 
 - This is your project directory structure.
 
-  <img src="./compartments/assets/media/structure.png?raw=true" width="275" height="auto">
+  <img src="./assets/structure.png?raw=true" width="275" height="auto">
 
 - For your Phaser project, you will be using the `assets`, `layouts`, and `template` directories.
 
@@ -129,25 +129,25 @@ This project documents how to setup your Phaser game with Airship.
 
   - Add your game scripts.
 
-  <img src="./compartments/assets/media/scripts.png?raw=true" width="150" height="auto">
+  <img src="./assets/scripts.png?raw=true" width="150" height="auto">
 
   - Add your script files to the body of `/compartments/layouts/application.html` and update the `<title>` with your project title.
   
-  <img src="./compartments/assets/media/added-scripts.png?raw=true" width="auto" height="auto">
+  <img src="./assets/added-scripts.png?raw=true" width="auto" height="auto">
 
 ### 2. Add your media:
   - In your project, navigate to `/compartments/assets/media/`.
 
   - Add your game images, music, sfx, etc.
 
-  <img src="./compartments/assets/media/media.png?raw=true" width="300" height="auto">
+  <img src="./assets/media.png?raw=true" width="300" height="auto">
 
 ### 3. Add your styles:
   - In your project, navigate to `/compartments/assets/styles/`.
 
   - Add your css files to the head of `/compartments/layouts/application.html`.
 
-  <img src="./compartments/assets/media/jumpslide.css.png?raw=true" width="auto" height="auto">
+  <img src="./assets/jumpslide_css.png?raw=true" width="auto" height="auto">
 
 ---
 
@@ -157,13 +157,13 @@ This project documents how to setup your Phaser game with Airship.
 
   - If you aren't already running the `airship serve` command, then in your terminal, run `airship serve`.
 
-  <img src="./compartments/assets/media/airship_serve.png?raw=true" width="200" height="auto">
+  <img src="./assets/airship_serve.png?raw=true" width="200" height="auto">
 
   This starts the server that will render all of your project files locally.
 
   - Open your browser and navigate to `http://localhost:9001`. To view any changes made to your game files, refresh this page.
 
-* If you encounter this error while attempting to serve, [log in](#airship-login) to your Airship project then try again.![](./compartments/assets/media/unauthorized.png?raw=true)
+* If you encounter this error while attempting to serve, [log in](#airship-login) to your Airship project then try again.![](./assets/unauthorized.png?raw=true)
 
 --
 
@@ -173,26 +173,26 @@ This project documents how to setup your Phaser game with Airship.
 
 - In your terminal, run `airship launch`.
 
-  <img src="./compartments/assets/media/airship_launch.png?raw=true" width="250" height="auto">
+  <img src="./assets/airship_launch.png?raw=true" width="250" height="auto">
 
 - This will ask you to upload compartments. This will overwrite everything on the server.
 
-  ![](./compartments/assets/media/airship_launch2.png?raw=true)
+  ![](./assets/airship_launch2.png?raw=true)
   Enter `yes` or `y`.
 
 - Open your browser and navigate to `projectname.airshipcms.io`.
 
 - If you encounter this error while attempting to launch, [log in](#airship-login) to your Airship project then try again. 
 
-  ![](./compartments/assets/media/unauthorized.png?raw=true)
+  ![](./assets/unauthorized.png?raw=true)
 
 - If you encounter an error like this while attempting to launch, you may have added a file type to the wrong directory or the file type you have added is unsupported. Please refer to the [Project Directory Structure](#project-directory-structure) section. 
 
-  ![](./compartments/assets/media/upload_failed.png?raw=true)
+  ![](./assets/upload_failed.png?raw=true)
 
 - If you encounter an error like this, or another error about your `manifest` needing to be updated, while attempting to launch, your `manifest` may be out of sync with your local files. The `manifest` simply tracks differences between files in your local development workspace and the server. The `manifest` may sometimes be out of sync when there are `launch` or `land` errors, or if you have multiple people working on a project. Simply run `airship manifest` if prompted, and say `y` to generate the manifest file. This is not desctructive. No files or assets will be overwritten with this action. 
 
-  <img src="./compartments/assets/media/nothing-left-to-do.png?raw=true" width="700" height="auto">
+  <img src="./assets/nothing-left-to-do.png?raw=true" width="700" height="auto">
 
 ---
 
@@ -202,7 +202,7 @@ This project documents how to setup your Phaser game with Airship.
 
 - In your browser, navigate to `http://projectname.airshipcms.io/admin`.
 
-  <img src="./compartments/assets/media/admin_portal_login.png?raw=true">
+  <img src="./assets/admin_portal_login.png?raw=true">
 
   If you haven't already logged into the admin portal, you will be redirected to the login page.
 
@@ -212,21 +212,21 @@ This project documents how to setup your Phaser game with Airship.
 
 - Click `users` in the sidebar.
 
-  <img src="./compartments/assets/media/sidebar_users.png" width="150px" height="auto">
+  <img src="./assets/sidebar_users.png" width="150px" height="auto">
 
 - This page displays a list of users existng on this site.
 
- <img src="./compartments/assets/media/users_list.png">
+ <img src="./assets/users_list.png">
 
 - To add a new user, click on the `New User` button located in the top right corner.
 
- <img src="./compartments/assets/media/new_user_bttn.png">
+ <img src="./assets/new_user_bttn.png">
 
 - On this page, you'll see a form that requires your new user's `email`, `password`, `password confirmation` and `user type`.
- <img src="./compartments/assets/media/users_create.png">
+ <img src="./assets/users_create.png">
 
  There are 4 user types: `superadmin`, `admin`, `user` and `noaccess`.
- <img src="./compartments/assets/media/user_type.png">
+ <img src="./assets/user_type.png">
 
  If the new user will be running Airship commands like `airship serve` or `airship launch`, you will need to set them as `admin` or `superadmin`.
 
@@ -234,11 +234,11 @@ This project documents how to setup your Phaser game with Airship.
 
 - To edit an existing user, click the pencil icon attached to the user.
 
-  <img src="./compartments/assets/media/user_list_pencil.png">
+  <img src="./assets/user_list_pencil.png">
 
   - On this page, the selected user's `email`, `password` and `user type` can be changed.
 
-  	<img src="./compartments/assets/media/users_edit.png">
+  	<img src="./assets/users_edit.png">
 
   	There is also an option to delete the user.
 
@@ -248,7 +248,7 @@ This project documents how to setup your Phaser game with Airship.
 
 - Click `pages` in the sidebar.
 
- <img src="./compartments/assets/media/pages_sidebar.png?raw=true" width="150px" height="auto">
+ <img src="./assets/pages_sidebar.png?raw=true" width="150px" height="auto">
 
  This page lists all of your site's existing pages.
 
@@ -256,7 +256,7 @@ This project documents how to setup your Phaser game with Airship.
 
  This page links to `/compartments/templates/` and `/compartments/layout/` of your project.
 
- <img src="./compartments/assets/media/pages_list.png">
+ <img src="./assets/pages_list.png">
 
  A superadmin user will see options to create a new page and edit or modify an existing page. An admin is only granted access to edit existing pages.
 
@@ -266,13 +266,13 @@ This project documents how to setup your Phaser game with Airship.
 
  - ##### Page Setup
 
-  <img src="./compartments/assets/media/page_modify.png">
+  <img src="./assets/page_modify.png">
 
   This section displays the pages's title, permalink, ID, when it was created and when it was last updated.
 
  - ##### Page Layout & Template.
 
-   	<img src="./compartments/assets/media/page_layout.png">
+   	<img src="./assets/page_layout.png">
 	
    	This section lets you create/select the layout and template that this page will used.
 	
@@ -284,7 +284,7 @@ This project documents how to setup your Phaser game with Airship.
 
  - ##### Page Fields
  
-   <img src="./compartments/assets/media/page_fields.png">
+   <img src="./assets/page_fields.png">
 
    Here, you'll find a list of predefined fields: `ID`, `Created At`, `Updated At` and `Title`. These fields cannot be edited.
 
@@ -294,13 +294,13 @@ This project documents how to setup your Phaser game with Airship.
 
    If you wanted to add game instructions to your page, start by filling in the title of your new field. For this example, the title "How to Play".
 
-   <img src="./compartments/assets/media/add_field_title.png">
+   <img src="./assets/add_field_title.png">
 
    The variable name will be filled automatically. This variable will be used to access it from your template later on.
 
    You can set the type of your page field.
 
-   <img src="./compartments/assets/media/add_field_type.png" width='200px' height='auto'>
+   <img src="./assets/add_field_type.png" width='200px' height='auto'>
 
    Types include: `text`, `textarea`, `richtext area`, `image`, `file`, `link`, `number`, `radio`, `select`, `multiselect`, `checkbox`, `list of images`, `list of files`, `  list of links`, `related aerostats` and `date`.
   
@@ -310,41 +310,41 @@ This project documents how to setup your Phaser game with Airship.
   
    You should see your new field listed under Page Fields.
   
-   <img src="./compartments/assets/media/field_added.png">
+   <img src="./assets/field_added.png">
    
   
    Click the `Modify Page` button located in the bottom and top right corners of the page.
 
-   <img src="./compartments/assets/media/modify_page_bttn.png">
+   <img src="./assets/modify_page_bttn.png">
 
  #### Edit Page
 
  - To edit a page, click on the pencil icon.
 
-  <img src="./compartments/assets/media/page_edit_pencil.png">
+  <img src="./assets/page_edit_pencil.png">
 
  - You can see all of your page fields here.
-  <img src="./compartments/assets/media/page_edit_field_added.png">
+  <img src="./assets/page_edit_field_added.png">
 
  - You can change the value of any field.
 
  - Edit the value of the `How to Play` field that was created earlier.
 
-  <img src="./compartments/assets/media/how_to_play.png">
+  <img src="./assets/how_to_play.png">
 
  - Click the `Save & Close` button located in the top or bottom right corner.
 
-   <img src="./compartments/assets/media/save_page_bttn.png">
+   <img src="./assets/save_page_bttn.png">
 
  - To use this new field on your site's page, go to `/compartments/templates/root.html` in your project.
 
  - Add your field: `{{ fields.variable_name }}`.
 
-   <img src="./compartments/assets/media/template_how_to_play.png">
+   <img src="./assets/template_how_to_play.png">
 
  - If your server is running, navigate to `http://localhost:9001` in your browser.
 
-   <img src="./compartments/assets/media/how_to_play_added.png">
+   <img src="./assets/how_to_play_added.png">
 
    You should now see your field on your page!
 
